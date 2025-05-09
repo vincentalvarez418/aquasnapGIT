@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@drawable/rounded_container"> <!-- Apply the rounded background -->
+
+    <!-- Image View for Fish Image -->
+    <ImageView
+        android:id="@+id/fishImageView"
+        android:layout_width="192dp"
+        android:layout_height="122dp"
+        android:elevation="4dp"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Vertical LinearLayout for Fish Name, Timestamp, and Delete Button -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Fish Name TextView -->
+        <TextView
+            android:id="@+id/fishNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="start"
+            android:lineSpacingExtra="4dp"
+            android:maxLines="2"
+            android:text="Fish Name"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Horizontal LinearLayout for Timestamp and Delete Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="0dp"
+            android:gravity="center_vertical">
+
+            <!-- Timestamp TextView -->
+            <TextView
+                android:id="@+id/timestampTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timestamp"
+                android:textColor="#C5C1C1"
+                android:textSize="14sp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center_vertical" />
+
+            <!-- Delete Button -->
+            <ImageView
+                android:id="@+id/deleteButton"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="0dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/delete"
+                android:padding="8dp"
+                android:src="@drawable/delet" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

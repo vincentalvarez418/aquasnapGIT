@@ -1,0 +1,10 @@
+tulingan: A streamlined, fast-swimming tuna species, the tulingan has a metallic blue back with dark stripes, fading to a silvery belly.
+tapog: Needle fish are slender, elongated fish with a long beak filled with sharp teeth, giving them a distinctive, needle-like appearance.
+salmonito: Goatfish are medium-sized, bottom-dwelling fish characterized by their long, whisker-like barbels that they use to probe the seafloor for food.
+pugot: Trigger fish are oval-shaped, compact fish with tough, leathery skin, often found near coral reefs.
+mulmul: Parrot fish are vibrant, colorful fish with fused teeth that form a beak-like structure, used to scrape algae off coral reefs.
+mameng: The humphead wrasse is a large reef fish with a prominent forehead hump and striking blue-green coloration.
+kitong: These fish are known for their calm temperament and herbivorous diet, feeding primarily on algae and contributing to the balance of reef ecosystems.
+fusilier: The yellowtail fusilier is a slender, torpedo-shaped fish with a distinctive yellow tail and a metallic blue body.
+apahap: Sea bass is a general term for various species of marine fish, often with a robust body and muted coloration that allows them to blend into rocky or sandy habitats.
+ahi: Yellowfin Tuna is a species of tuna found in pelagic waters of tropical and subtropical oceans worldwide.

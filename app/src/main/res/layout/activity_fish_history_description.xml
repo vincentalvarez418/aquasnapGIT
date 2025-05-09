@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5B87A7"
+        android:padding="16dp">
+
+        <!-- Exit Button -->
+        <ImageButton
+            android:id="@+id/exitButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Fish Image -->
+
+        <!-- Fish Name -->
+
+        <!-- Local Name -->
+
+        <!-- Max Size Section -->
+
+        <ImageView
+            android:id="@+id/fishImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/exitButton"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:background="@drawable/rounded_corners"
+            android:contentDescription="Fish Image"
+            android:src="@android:drawable/ic_menu_report_image"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="232dp" />
+
+        <TextView
+            android:id="@+id/fishNameTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fishImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fish Name"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="58dp"
+            tools:layout_editor_absoluteY="132dp" />
+
+        <TextView
+            android:id="@+id/fishLocalNameTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fishNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Local Name"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            tools:layout_editor_absoluteX="141dp"
+            tools:layout_editor_absoluteY="14dp" />
+
+        <!-- Max Weight Section -->
+
+        <TextView
+            android:id="@+id/maxSizeLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fishLocalNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Max Size"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="218dp"
+            tools:layout_editor_absoluteY="92dp" />
+
+        <TextView
+            android:id="@+id/fishSizeTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/maxSizeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.5m"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="250dp"
+            tools:layout_editor_absoluteY="132dp" />
+
+        <TextView
+            android:id="@+id/maxWeightLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fishSizeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Max Weight"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="300dp"
+            tools:layout_editor_absoluteY="52dp" />
+
+        <!-- Description Section -->
+
+        <TextView
+            android:id="@+id/fishWeightTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/maxWeightLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100kg"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="321dp"
+            tools:layout_editor_absoluteY="92dp" />
+
+        <TextView
+            android:id="@+id/descriptionLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fishWeightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Description"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+        <TextView
+            android:id="@+id/fishDescriptionTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descriptionLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Description text goes here"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

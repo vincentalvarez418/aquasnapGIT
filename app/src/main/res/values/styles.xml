@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RoundedCorners">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item> <!-- Adjust as needed -->
+    </style>
+    <!-- styles.xml -->
+    <style name="RoundedImage" parent="Widget.MaterialComponents.ShapeableImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item> <!-- Adjust as desired for roundness -->
+    </style>
+    <!-- res/values/styles.xml -->
+
+        <style name="DialogButtonStyle">
+            <item name="android:background">@android:color/darker_gray</item>
+            <item name="android:textColor">@android:color/white</item>
+            <item name="android:textSize">16sp</item>
+        </style>
+    <style name="WhiteSpinnerTheme" parent="Theme.AppCompat.Light">
+        <item name="android:spinnerStyle">@style/WhiteSpinnerStyle</item>
+    </style>
+
+    <style name="WhiteSpinnerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:popupBackground">#5B87A7</item> <!-- Background matches screen -->
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+</resources>

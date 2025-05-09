@@ -1,0 +1,130 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/camera_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7DDE2">
+
+    <!-- Title at the Top -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="AquaSnap"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#007AFE"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Camera Preview wrapped in a container with rounded corners -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/roundedPreviewContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToOutline="true"
+        android:background="@drawable/rounded_corners"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.85"
+        app:layout_constraintHeight_percent="0.8">
+
+        <!-- Camera Preview -->
+        <androidx.camera.view.PreviewView
+            android:id="@+id/view_finder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:color="@android:color/transparent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <!-- Overlay (Behind the Snap Button) -->
+        <com.aquasnap.yolov8tflite.OverlayView
+            android:id="@+id/overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@android:color/transparent"
+            android:elevation="8dp" />
+
+        <!-- Snap Icon Button (In front of Camera View) -->
+        <ImageButton
+            android:id="@+id/pauseResumeButton"
+            android:layout_width="86dp"
+            android:layout_height="106dp"
+            android:src="@drawable/snap"
+            android:contentDescription="Snap"
+            android:layout_margin="20dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.85" />
+
+        <!-- Detected Items Text (On top of Camera View) -->
+        <TextView
+            android:id="@+id/detectedCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Detected Items: 0"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- History Button (Bottom Right) -->
+    <ImageView
+        android:id="@+id/historyStatusButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="50dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Show History"
+        android:padding="8dp"
+        app:srcCompat="@drawable/history"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Library Icon (Bottom Left) -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="50dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Library"
+        app:srcCompat="@drawable/library"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Toggle Detection Button (Bottom Center) -->
+    <Button
+        android:id="@+id/toggleDetectionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#007AFE"
+        android:text="Show Detections"
+        android:textStyle="bold"
+        android:elevation="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="NotSibling" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

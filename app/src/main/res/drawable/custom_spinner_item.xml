@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- White Spinner Theme -->
+    <style android:name="WhiteSpinnerTheme" parent="Widget.AppCompat.Spinner"
+        tools:ignore="MissingPrefix">
+        <item android:name="android:textColor"
+            tools:ignore="MissingPrefix">@android:color/white</item>
+        <item android:name="android:popupBackground">@android:color/white</item>
+    </style>
+</resources>

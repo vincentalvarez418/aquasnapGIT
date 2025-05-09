@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5B87A7"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title for the History Screen -->
+    <TextView
+        android:id="@+id/historyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="History"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <!-- Spinner for sorting options -->
+    <Spinner
+        android:id="@+id/sortSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
+        android:theme="@style/WhiteSpinnerTheme" />
+
+    <!-- ListView for displaying history -->
+    <ListView
+        android:id="@+id/historyListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+    android:dividerHeight="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp" />
+
+
+</LinearLayout>
