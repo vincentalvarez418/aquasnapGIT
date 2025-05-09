@@ -1,4 +1,6 @@
-Aquasnap
+**Aquasnap**
+
+
 Aquasnap is a local mobile application designed for Zamboanga City that identifies local fish species using the YOLO (You Only Look Once) algorithm. The app operates offline, making it ideal for use in areas with limited internet connectivity.
 
 Features:
