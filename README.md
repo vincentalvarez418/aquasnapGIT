@@ -1,41 +1,55 @@
-# Aquasnap
+# 🐟 Aquasnap
 
-Aquasnap is a local mobile application designed for Zamboanga City that identifies local fish species using the YOLO (You Only Look Once) algorithm. The app operates offline, making it ideal for use in areas with limited internet connectivity.
-
----
-
-## Features:
-- **Fish Identification:** Utilizes YOLO to identify and classify fish species.
-- **Offline Mode:** No need for an internet connection to use the app once installed.
-- **Local Focus:** Tailored specifically for the fish species found in Zamboanga City.
+**Aquasnap** is a local-first mobile application designed for **Zamboanga City**, built to identify native fish species using the **YOLO (You Only Look Once)** algorithm. It works **offline**, making it perfect for coastal and low-connectivity environments.
 
 ---
 
-## Setup Instructions:
+## ✨ Features
 
-### Prerequisites:
-- Android Studio or any compiler that can build an APK and run it on an Android device.
+- 🔍 **Fish Identification**  
+  Detect and classify fish species in real-time using YOLO.
 
-No additional setup is required beyond having the necessary tools to compile and run the app.
+- 📴 **Offline Mode**  
+  No internet? No problem. Works fully offline after installation.
 
-### Steps to Set Up:
-1. Clone the repository or download the app files.
-2. Open the project in Android Studio (or your chosen compiler).
-3. Build the APK and deploy it to your Android device.
-
----
-
-## System Requirements:
-- **Android Version:** Android 8 (Oreo) and above.
-- **Processor:** MediaTek P series or equivalent.
-- **RAM:** 4 GB or more.
+- 🌊 **Local Focus**  
+  Tailored specifically for fish species found in **Zamboanga City**.
 
 ---
 
-## Getting Started:
-1. Open the project in Android Studio.
-2. Connect an Android device or set up an emulator.
-3. Build and run the APK on your device.
-4. Use the app to scan and identify fish species locally in Zamboanga City.
+## 🛠️ Setup Instructions
+
+### 🔗 Prerequisites
+
+- 🧰 Android Studio or any APK-compatible compiler  
+- 📱 Android device or emulator  
+- ✅ No extra setup needed beyond the build tools
+
+---
+
+### ⚙️ Steps to Set Up
+
+1. 📁 Clone or download the Aquasnap project  
+2. 💻 Open it in **Android Studio**  
+3. 🏗️ Build the APK  
+4. 📲 Install it on your Android device  
+5. 🐟 Launch and start identifying fish, offline!
+
+---
+
+## 🖥️ System Requirements
+
+- 📱 **Android Version**: 8.0 (Oreo) or higher  
+- 🚀 **Processor**: MediaTek P series or equivalent  
+- 🧠 **RAM**: 4 GB or more  
+
+---
+
+## 🚀 Getting Started
+
+1. 🔓 Open the project in **Android Studio**  
+2. 🔌 Connect your Android device or emulator  
+3. 🛠️ Build and run the APK  
+4. 🐠 Scan and identify local fish species in **Zamboanga City**!
 
 ---
